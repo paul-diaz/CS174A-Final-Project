@@ -17,7 +17,11 @@ Implementation:
    All of the asteroids are spherical entities, so their hitboxes are based on the origin of their transforms and the given radius. Because we have three spaceships, each one needs a separate hitbox. To do this, we constructed a frame of points that extends from the central spaceship transform. By choosing points that are on specific edges of the spaceship, hitbox collision can be detected quickly and without redundant points. The hitboxes of each of the ships are shown below.
 	The hit boxes are shown located at the front of the ships as well as on the top most and bottom most portions.  This is done because the ship itself only travels forward and does not travel backwards, therefore if it makes any contact with an asteroid it will be on the front, top or bottom of the ship and set off the hitbox.  Additionally, the laser fired from the spacecraft operates with a simple hitbox.  This is a very trivial hitbox, since the laser is small it simply checks the overlap laser with the asteroid itself.
 	The way this calculation is performed is shown in a pseudocode below:
+	
     Loop through number of asteroids
+    
 	      Loop through number of hitboxes/lasers
+	      
 		        If ( hitbox (x,y,z)  - asteroid center (x,y,z) <= asteroid size )
+			
 			         Animate asteroid explosion and if it is ship hitbox, explode ship and end game
