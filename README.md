@@ -10,6 +10,7 @@ Mechanics:
    The game controls are displayed on the title screen. To move, the user must use “w,” “a,” “s, ” and “d” as well as “.” to thrust forward. Pressing “p” will select the ship and “o” will select the difficulty. After pressing “i” to start, the player can also shoot lasers with “q.” Current speed, time remaining, lasers remaining, and difficulty are also displayed below the scene along with the controls.
    
 Advanced Feature: Collision Detection
+
    The advanced feature we chose for this project is collision detection. We chose this feature as it is most relevant to an obstacle avoidance game. Upon collision with an asteroid, a death animation plays, followed by the game over screen. The laser can also collide with asteroids, in which case one or more asteroids will explode and disappear from the screen. Collision detection is also implemented at the star, as contact with it will display a victory screen. The gameplay area also has a boundary box so that the player cannot stray away from the asteroid field. The explosion animations are an homage to the retro game Asteroids, in which the spaceship shatters and pieces travel in all directions.
    
 Implementation:
